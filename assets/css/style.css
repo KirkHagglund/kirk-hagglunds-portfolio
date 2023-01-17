@@ -16,10 +16,12 @@
 h1 {
     padding: 40px;
     font-size: 3rem;
-    color: cornsilk;
+    /*color: cornsilk;*/
+    color: rgb(192, 205, 241);
     background-color: rgb(24, 24, 143);
     border-radius: 10px;
-    box-shadow: 8px 8px 5px rgb(122, 114, 114);
+    /*box-shadow: 8px 8px 5px rgb(122, 114, 114);*/
+    box-shadow: 8px 8px 15px rgb(176, 193, 240);
     margin: 8px, 8px, 8px, 8px;
 }
 
@@ -33,7 +35,7 @@ li {
 
 li a {
     text-decoration: none;
-    color: rgb(24, 24, 143);
+    color: rgb(1, 1, 63);
     font-size: 1.5rem;
     font-weight: bolder;
     padding: auto 20px;
@@ -41,7 +43,9 @@ li a {
 }
 
 main {
-    background-color: rgb(176, 193, 240);
+    background-color: rgb(192, 205, 241);
+    padding-bottom: 40px;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -52,6 +56,7 @@ h2 {
     align-self: stretch;
 }
 
+/*Switch .about section to grid layout*/
 .about {
     display: flex;
     align-items: flex-end;
@@ -59,22 +64,83 @@ h2 {
     padding-top: 30px;
 }
 
-/*Keeping this here just in case
-#about-title {
-    align-self: stretch;
-    color: rgb(24, 24, 143);
-    width: 30%;
-    margin-left: 20px;
-}*/
-
 #bio {
     font-weight: bolder;
     line-height: 1.5rem;
     width: 60%;
+    color: rgb(1, 1, 63);
+    padding-right: 20px;
 }
 
 #pic {
    height: 200px;
    align-self: center;
    border-radius: 10px;
+}
+
+/*You better werk betch*/
+.work {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "work-title work-title grid-1 grid-1 grid-1 grid-1 grid-1 grid-1"  
+    "work-title work-title grid-1 grid-1 grid-1 grid-1 grid-1 grid-1"
+    "work-title work-title grid-2 grid-2 grid-2 grid-3 grid-3 grid-3"
+    "work-title work-title grid-4 grid-4 grid-4 grid-5 grid-5 grid-5"; 
+  }
+
+.work-title {
+    grid-area: work-title;
+}
+
+/*Add images and styling to project tiles*/
+.grid-1 {
+    grid-area: grid-1;
+    background-color: blueviolet;
+    height: 400px;
+}
+
+.grid-2 {
+    grid-area: grid-2;
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.grid-3 {
+    grid-area: grid-3;
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.grid-4 {
+    grid-area: grid-4;
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.grid-5 {
+    grid-area: grid-5;
+    background-color: blueviolet;
+    height: 200px;
+}
+
+/*Footer styling time babay*/
+footer {
+    background-image: url(../images/brick-background.jpg);
+    height: 200%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-fino p {
+    padding-left: 5px;
 }
