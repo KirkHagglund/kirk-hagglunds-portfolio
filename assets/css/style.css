@@ -25,7 +25,6 @@ h1 {
 
 ul {
     list-style-type: none;
-    display: inline;
 }
 
 li {
@@ -39,4 +38,43 @@ li a {
     font-weight: bolder;
     padding: auto 20px;
     margin-right: 20px;
+}
+
+main {
+    background-color: rgb(176, 193, 240);
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(24, 24, 143);
+    width: 30%;
+    margin-left: 20px;
+    align-self: stretch;
+}
+
+.about {
+    display: flex;
+    align-items: flex-end;
+    min-height: 200px;
+    padding-top: 30px;
+}
+
+/*Keeping this here just in case
+#about-title {
+    align-self: stretch;
+    color: rgb(24, 24, 143);
+    width: 30%;
+    margin-left: 20px;
+}*/
+
+#bio {
+    font-weight: bolder;
+    line-height: 1.5rem;
+    width: 60%;
+}
+
+#pic {
+   height: 200px;
+   align-self: center;
+   border-radius: 10px;
 }
