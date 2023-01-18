@@ -1,3 +1,9 @@
+:root {
+    --main: rgb(24, 24, 143);
+    --background: rgb(192, 205, 241);
+    --small: rgb(1, 1, 63);
+}
+
 * {
     font-size: 16;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,11 +22,10 @@
 h1 {
     padding: 40px;
     font-size: 3rem;
-    color: rgb(192, 205, 241);
-    background-color: rgb(24, 24, 143);
+    color: var(--background);
+    background-color: var(--main);
     border-radius: 10px;
     box-shadow: 8px 8px 15px rgb(176, 193, 240);
-    margin: 8px, 8px, 8px, 8px;
 }
 
 ul {
@@ -33,7 +38,7 @@ li {
 
 li a {
     text-decoration: none;
-    color: rgb(1, 1, 63);
+    color: var(--small);
     font-size: 1.5rem;
     font-weight: bolder;
     padding: auto 20px;
@@ -41,18 +46,19 @@ li a {
 }
 
 main {
-    background-color: rgb(192, 205, 241);
+    background-color: var(--background);
     padding-bottom: 40px;
     margin-bottom: 0;
+    background: linear-gradient(10deg, var(--main),
+    var(--background));
 }
 
 h2 {
     font-size: 2rem;
-    color: rgb(24, 24, 143);
+    color: var(--main);
     width: 30%;
     margin-left: 20px;
     align-self: stretch;
-    ;
 }
 
 .about {
@@ -67,7 +73,7 @@ h2 {
     font-weight: bolder;
     line-height: 1.5rem;
     width: 65%;
-    color: rgb(1, 1, 63);
+    color: var(--small);
     padding-right: 20px;
 }
 
@@ -100,21 +106,21 @@ h2 {
     grid-area: grid-1;
     background-image: url(../images/CSS-background.jpg);
     height: 400px;
-    border: 4px solid rgb(24, 24, 143);
+    border: 4px solid var(--small);
 }
 
 .grid-2 {
     grid-area: grid-2;
     background-image: url(../images/debug.jpg);
     height: 200px;
-    border: 4px solid rgb(24, 24, 143);
+    border: 4px solid var(--small);
 }
 
 .grid-3 {
     grid-area: grid-3;
     background-image: url(../images/studyguide.jpg);
     height: 200px;
-    border: 4px solid rgb(24, 24, 143);
+    border: 4px solid var(--small);
     background-size: cover;
     background-position: center;
 }
@@ -123,7 +129,7 @@ h2 {
     grid-area: grid-4;
     background-image: url(../images/dodgeball-logo.jpg);
     height: 200px;
-    border: 4px solid rgb(24, 24, 143);
+    border: 4px solid var(--small);
     background-size: contain;
 }
 
@@ -131,22 +137,23 @@ h2 {
     grid-area: grid-5;
     background-image: url(../images/rock-paper-scissors.jpg);
     height: 200px;
-    border: 4px solid rgb(24, 24, 143);
+    border: 4px solid var(--small);
     background-size: cover;
 }
 
 .grid-border {
     grid-area: work-title1;
-    border-left: 5px rgb(24, 24, 143) solid;
+    border-left: 5px var(--main) solid;
+    /*background: linear-gradient(10deg, rgb(192, 205, 241), rgb(24, 24, 143));*/
 }
 
 .project-text {
-    background-color: rgb(192, 205, 241);
+    background-color: var(--background);
     width: fit-content;
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 8px 8px 5px rgb(24, 24, 143);
+    box-shadow: 8px 8px 5px var(--main);
 }
 
 .container {
@@ -168,13 +175,13 @@ footer {
 }
 
 .contact-info p {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .footer-link {
     text-decoration: none;
     padding: 10px;
-    color: rgb(24, 24, 143);
+    color: var(--small);
 }
 
 @media screen and (max-width: 992px) {
@@ -234,7 +241,7 @@ footer {
     justify-content: center;
     }
     h1 {
-        color: rgb(1, 1, 63);
+        color: var(--small);
         background-color: transparent !important;
         box-shadow: none;
         text-align: center;
