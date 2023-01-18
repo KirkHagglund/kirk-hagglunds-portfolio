@@ -112,10 +112,11 @@ h2 {
 
 .grid-3 {
     grid-area: grid-3;
-    background-image: url(../images/study.jpg);
+    background-image: url(../images/studyguide.jpg);
     height: 200px;
     border: 4px solid rgb(24, 24, 143);
     background-size: cover;
+    background-position: center;
 }
 
 .grid-4 {
@@ -148,7 +149,10 @@ h2 {
     box-shadow: 8px 8px 5px rgb(24, 24, 143);
 }
 
-/*Footer styling time babay*/
+.container {
+    text-decoration: none;
+}
+
 footer {
     background-image: url(../images/brick-background.jpg);
     height: 200%;
@@ -179,22 +183,67 @@ footer {
    } 
    h1 {
     width: fit-content;
+    margin: 0 auto;
+   }
+   ul {
     text-align: center;
+   }
+   .about {
+    display: block;
+   }
+   h2 {
+    text-align: center;
+    margin: 0 auto;
+   }
+   #bio {
+    width: 100%;
+    text-align: center;
+   }
+   #pic {
+    display: none;
+   }
+   .grid-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .grid-border {
+    display: none;
+   }
+   .work {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+   }
+   .work-title {
+    display: block;
+   }
+   footer {
+    display: block;
+   }
+   .contact-info {
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
    }
 }
 
 @media screen and (max-width: 768px) {
-
+    .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    h1 {
+        color: rgb(1, 1, 63);
+        background-color: transparent !important;
+        box-shadow: none;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 20px 0px 0px 0px;
+        width: fit-content;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-/*.default-link { 
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
-    filter: alpha(opacity=0);  
-    opacity:0;  
-  }*/
