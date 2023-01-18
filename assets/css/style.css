@@ -12,7 +12,7 @@
 .banner {
     width: 100%;
     height: 200px;
-    background: url(../images/brick-background.jpg);
+    background-image: url(../images/brick-background.jpg);
     background-size: cover;
     display: flex;
     justify-content: space-between;
